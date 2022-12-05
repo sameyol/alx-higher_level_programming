@@ -1,11 +1,31 @@
-#!/usr/bin/python3
+def print_element(my_list, idx):
 
-def element_at(my_list, idx):
+        '''
 
-        if idx < 0 or idx > len(my_list) - 1:
+                Print_element returns the value of a sequence to the calling function.
 
-                    return 'None'
+                    Behaviour:
 
-                    else:
+                                    When idx is negative or is greater than the length of the
 
-                                return my_list[idx]
+                                                    sequence, the Function returns None else it returns the value
+
+                                                                    of the sequence at index idx
+
+                                                                        '''
+
+                                                                            if idx < 0 or idx > len(my_list):
+
+                                                                                        return None
+
+                                                                                        return my_list[idx]
+
+
+
+
+
+                                                                                    my_list = [1, 2, 3, 4, 5]
+
+                                                                                    idx = 3
+
+                                                                                    print("Element at index {:d} is {}".format(idx, print_element(my_list, idx)))
